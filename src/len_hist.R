@@ -3,8 +3,8 @@ library("dplyr")
 
 setwd("C:/Users/Mary/Desktop/дз/Майнор/файлы с сервера/Проект")
 ###
-
-NAME <- 'GSM3003539.merged'
+NAME <- 'H3K9me3_H1.intersect_with_G4'
+#NAME <- 'GSM3003539.merged'
 #NAME <- 'H3K9me3_H1.ENCFF697NMG.hg19'
 #NAME <- 'H3K9me3_H1.ENCFF587TWB.hg19'
 OUT_DIR<-'C:/Users/Mary/Desktop/дз/Майнор/файлы с сервера/Проект/Results'
