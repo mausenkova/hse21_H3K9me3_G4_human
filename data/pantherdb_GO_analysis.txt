@@ -1,0 +1,18 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20210224)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.4735677 Released 2021-05-01
+Analyzed List:	Client Text Box Input (Homo sapiens)
+Reference List:	Homo sapiens (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+GO biological process complete	Homo sapiens - REFLIST (20595)	Client Text Box Input (245)	Client Text Box Input (expected)	Client Text Box Input (over/under)	Client Text Box Input (fold Enrichment)	Client Text Box Input (raw P-value)	Client Text Box Input (FDR)
+cellular component organization or biogenesis (GO:0071840)	6006	36	71.45	-	.50	1.78E-07	1.41E-03
+cellular process (GO:0009987)	15495	146	184.33	-	.79	9.61E-08	1.52E-03
+cellular component organization (GO:0016043)	5783	36	68.80	-	.52	1.28E-06	6.72E-03
+gene expression (GO:0010467)	2117	6	25.18	-	.24	5.57E-06	2.20E-02
+metabolic process (GO:0008152)	8313	65	98.89	-	.66	7.53E-06	2.38E-02
+cellular metabolic process (GO:0044237)	7542	58	89.72	-	.65	1.78E-05	4.68E-02
