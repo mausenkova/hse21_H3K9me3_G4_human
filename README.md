@@ -116,6 +116,17 @@ bedtools intersect  -a GSM3003539.merged.bed   -b  H3K9me3_H1.merge.hg19.bed  > 
 
 Полученный файл с помощью программы WinSCP были перенесены на ПК для дальнейшей работы.
 
+Далее с помощью [скрипта](src/len_hist.R) на R была получена гистограмма длин участков. 
+Результаты:
+
+![H3K9me3_H1.intersect_with_G4](images/png/len_hist.H3K9me3_H1.intersect_with_G4.png)
+
+Также с помощью [скрипта](src/ChipSeeker.R) на R был построен график расположения пиков относительно аннотированных генов.
+
+Результаты:
+
+![chip_seeker.H3K9me3_H1.intersect_with_G4.plotAnnoPie](images/chip_seeker.H3K9me3_H1.intersect_with_G4.plotAnnoPie.png)
+
 С помощью [Genome Browser](http://genome.ucsc.edu/s/mausenkova/hse21_H3K9me3_G4_human) были визуализированы полученные участки:
 
 ```
