@@ -104,7 +104,7 @@ cat GSM3003539_*.bed | sort -k1,1 -k2,2n | bedtools merge > GSM3003539.merged.be
 Также с помощью [скрипта](src/ChipSeeker.R) на R был построен график расположения пиков относительно аннотированных генов.
 
 Результаты:
-
+###### chip_seeker.GSM3003539.merged.plotAnnoPie
 ![chip_seeker.GSM3003539.merged.plotAnnoPie](images/chip_seeker.GSM3003539.merged.plotAnnoPie.png)
 
 #### Анализ пересечений гистоновой метки и структуры ДНК
@@ -124,7 +124,7 @@ bedtools intersect  -a GSM3003539.merged.bed   -b  H3K9me3_H1.merge.hg19.bed  > 
 Также с помощью [скрипта](src/ChipSeeker.R) на R был построен график расположения пиков относительно аннотированных генов.
 
 Результаты:
-
+###### chip_seeker.H3K9me3_H1.intersect_with_G4.plotAnnoPie
 ![chip_seeker.H3K9me3_H1.intersect_with_G4.plotAnnoPie](images/chip_seeker.H3K9me3_H1.intersect_with_G4.plotAnnoPie.png)
 
 С помощью [Genome Browser](http://genome.ucsc.edu/s/mausenkova/hse21_H3K9me3_G4_human) были визуализированы полученные участки:
