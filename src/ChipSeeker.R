@@ -11,14 +11,13 @@ library(tibble)  # column_to_rownames
  BiocManager::install("clusterProfiler")
  BiocManager::install("ChIPseeker")
  BiocManager::install("org.Hs.eg.db")
-
 library(ChIPseeker)
 library(TxDb.Hsapiens.UCSC.hg19.knownGene)
 library(clusterProfiler)
 
 ###
-
-NAME <- 'H3K9me3_H1.ENCFF697NMG.hg19.filtered'
+NAME <- 'GSM3003539.merged'
+#NAME <- 'H3K9me3_H1.ENCFF697NMG.hg19.filtered'
 #NAME <- 'H3K9me3_H1.ENCFF587TWB.hg19.filtered'
 OUT_DIR<-'C:/Users/Mary/Desktop/дз/Майнор/файлы с сервера/Проект/Results/'
 DATA_DIR<- 'C:/Users/Mary/Desktop/дз/Майнор/файлы с сервера/Проект/'
@@ -30,8 +29,6 @@ txdb <- TxDb.Hsapiens.UCSC.hg19.knownGene
 
 peakAnno <- annotatePeak(BED_FN, tssRegion=c(-3000, 3000), TxDb=txdb, annoDb="org.Hs.eg.db")
 
-
 png(paste0(OUT_DIR, 'chip_seeker.', NAME, '.plotAnnoPie.png'))
 plotAnnoPie(peakAnno)
 dev.off()
-
