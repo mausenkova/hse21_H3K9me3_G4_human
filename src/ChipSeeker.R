@@ -9,10 +9,10 @@ library(tibble)  # column_to_rownames
    BiocManager::install(version = "3.13")
  BiocManager::install("TxDb.Hsapiens.UCSC.hg19.knownGene")
  BiocManager::install("clusterProfiler")
-
+ BiocManager::install("ChIPseeker")
+ 
 library(ChIPseeker)
 library(TxDb.Hsapiens.UCSC.hg19.knownGene)
-#library(TxDb.Mmusculus.UCSC.mm10.knownGene)
 library(clusterProfiler)
 
 ###
